@@ -1,0 +1,56 @@
+.leftbar {
+    float: left;
+    width: 50%;
+    height: 1080px;
+    background-color: #97caef;
+}
+.rightbar {
+    float: right;
+    width: 50%;
+    height: 1080px;
+    background-color: grey;
+}
+
+ul.ul_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li.li_menu {
+    float: left;
+}
+li.li_menu a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+li a:hover {
+    background-color: #111;
+}
+
+li img{
+    max-width: 125px;
+    float: none;
+}
+
+ul.ul_krizovatky {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li.li_krizovatky {
+    float: none;
+}
+li.li_krizovatky a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
