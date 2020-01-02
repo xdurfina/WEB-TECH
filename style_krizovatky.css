@@ -7,7 +7,7 @@
 .rightbar {
     float: right;
     width: 50%;
-    height: 1080px;
+    height: 100%;
     background-color: grey;
 }
 
@@ -34,7 +34,9 @@ li a:hover {
 }
 
 li img{
-    max-width: 125px;
+    margin-top: 10px;
+    margin-left: 15px;
+    max-width: 150px;
     float: none;
 }
 
@@ -43,14 +45,14 @@ ul.ul_krizovatky {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
 }
 li.li_krizovatky {
     float: none;
 }
 li.li_krizovatky a {
+    margin-left: 20px;
     color: white;
-    text-align: center;
     text-decoration: none;
     font-size: 30px;
 }
