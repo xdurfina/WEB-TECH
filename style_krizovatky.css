@@ -49,10 +49,15 @@ ul.ul_krizovatky {
 }
 li.li_krizovatky {
     float: none;
+    color: lightgrey;
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 li.li_krizovatky a {
     margin-left: 20px;
     color: white;
     text-decoration: none;
     font-size: 30px;
+    width: 200px;
 }
