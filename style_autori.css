@@ -5,10 +5,12 @@ ul.ul_menu {
     overflow: hidden;
     background-color: #333;
 }
+
 li.li_menu {
     float: left;
 }
-li.li_menu a{
+
+li.li_menu a {
     display: block;
     color: white;
     text-align: center;
@@ -16,6 +18,49 @@ li.li_menu a{
     text-decoration: none;
     font-size: 30px;
 }
+
 li a:hover {
     background-color: #111;
+}
+
+.leftbar {
+    float: left;
+    margin-left: 0;
+    width: 33.3%;
+    height: 300px;
+    background-color: grey;
+}
+.leftbar img{
+    margin-top: 10px;
+    height: 200px;
+    margin-left: 27%;
+}
+
+.centerbar {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    background-color: dimgray;
+}
+.centerbar img{
+    margin-top: 10px;
+    height: 200px;
+    margin-left: 30%;
+}
+.rightbar {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    background-color: #b1a296;
+}
+.rightbar img{
+    margin-top: 10px;
+    height: 200px;
+    margin-left: 32%;
+}
+.info {
+    color: black;
+    margin-left: 35%;
+    margin-top: 25px;
+    font-size: 22px;
 }
