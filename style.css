@@ -1,0 +1,31 @@
+/*Tomas*/
+h1{
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+header{
+    background-color: darkblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.menu{
+    padding-top: 100px;
+    text-align: center;
+}
+.obrazok{
+    height: 400px;
+    width: auto;
+    filter: grayscale(100%);
+}
+.obrazok1:hover {
+    transition: filter 1s ease-in-out;
+    filter: grayscale(0);
+
+}
+.obrazok2:hover {
+    transition: filter 1s ease-in-out;
+    filter: grayscale(0);
+}
+/*Tomas*/
