@@ -16,7 +16,8 @@ var path3 = anime.path("#cesta3");
 
 var easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
 
-var motionPath = anime({
+
+var motionPath1 = anime({
     targets: '.box.red',
     translateX: path('x'),
     translateY: path('y'),
@@ -28,7 +29,9 @@ var motionPath = anime({
     loop: true
 });
 
-var motionPath = anime({
+
+
+var motionPath2 = anime({
     targets: '.box.blue',
     translateX: path2('x'),
     translateY: path2('y'),
@@ -40,7 +43,7 @@ var motionPath = anime({
     loop: true
 });
 
-var motionPath = anime({
+var motionPath3 = anime({
     targets: '.box.yellow',
     translateX: path3('x'),
     translateY: path3('y'),
