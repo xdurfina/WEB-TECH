@@ -46,6 +46,7 @@ ul.ul_krizovatky {
     padding: 0;
     overflow: hidden;
     background-color: grey;
+    padding-bottom: 20px;
 }
 li.li_krizovatky {
     float: none;
