@@ -7,8 +7,9 @@
 /*}*/
 
 body{
-    background-image: url("kriz1.png");
+    background: url("kriz1opt.svg");
     background-repeat: no-repeat;
+
 }
 
 #anime-demo{
@@ -16,8 +17,8 @@ body{
 }
 
 .box {
-    pointer-events: none;
-    background-color: null;
+
+
     margin: 4px;
     display: inline-block;
     top: -10px;
@@ -33,6 +34,12 @@ body{
     position: absolute;
     top: px;
 }
+
+.box.red{
+    position: absolute;
+    margin-top: 50px;
+}
+
 
 
 /*.red{background-color: red}*/
