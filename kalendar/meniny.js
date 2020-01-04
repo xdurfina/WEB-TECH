@@ -43,12 +43,23 @@
 //     document.getElementById("demo").innerHTML = txt;
 // }
 
-function loadXMLDoc() {
+function loadXMLDoc1() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myObj = JSON.parse(this.responseText);
             myFunctionDatumNaMeno(myObj);
+        }
+    };
+    xmlhttp.open("GET", "meniny.json", true);
+    xmlhttp.send();
+}
+function loadXMLDoc2() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            myFunctionMenoNaDatum(myObj);
         }
     };
     xmlhttp.open("GET", "meniny.json", true);
@@ -66,14 +77,59 @@ function myFunctionDatumNaMeno(json) {
     for (var key in json) {
         if (json.hasOwnProperty(key)) {
             if(json[key].den===datum){
-                txt+=json[key].SK;
+                if(json[key].SK){
+                    txt+=json[key].SK;
+                }
+                else{
+                    if(json[key].SKsviatky){
+                        txt+=json[key].SKsviatky;
+                    }
+                    // break;
+                }
             }
         }
     }
-    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("demo1").innerHTML = txt;
 }
 
-function myFunctionMenoNaDatum() {
+function myFunctionMenoNaDatum(json) {
+    var txt,day, month, year,datum;
+    txt="";
+    var name = $('#name1').val();
+    var res;
+    res=name.toLocaleLowerCase();
+    res=res.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    for (var key in json) {
+        if (json.hasOwnProperty(key)){
+            if(json[key].SK){
+                var pom;
+                pom=json[key].SK;
+                if((pom.split(', '))==1){
+                    var data_array = pom.split(', ');
+                    for(var toto in data_array){
+                        toto=toto.toLocaleLowerCase();
+                        toto=toto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        alert(toto);
+                        if(toto===res){
+                            txt+=json[key].den;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    pom = pom.toLocaleLowerCase();
+                    pom = pom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                    if (pom === res) {
+                        txt += json[key].den;
+                        break;
+                    }
+                }
+            }
 
+        }
+    }
+
+    document.getElementById("demo2").innerHTML = txt;
 }
 
