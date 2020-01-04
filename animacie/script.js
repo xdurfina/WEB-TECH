@@ -13,7 +13,17 @@ const path = anime.path("#cesta1");
 const path2 = anime.path("#cesta2");
 const path3 = anime.path("#cesta3");
 
-const poradieaut = [];
+// const  poradieAut = [1,2,3];
+// const spravnePoradieAut = [1,2,3];
+//
+// function kontrolaspravnosti(){
+//     if (spravnePoradieAut == poradieAut){
+//         alert("PRAVDA")}
+//         else {alert("NEPRAVDA")}
+// }
+//
+// for (i = 0; i<(spravnePoradieAut.length)
+
 
 // const easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
 
@@ -50,15 +60,18 @@ function motionPath1() {
         duration: 5000,
         loop: false
     });
-    const spravneporadie = [1, 2, 3];
-    poradieaut.push(1);
-    poradieaut.push(2);
-    poradieaut.push(3);
-    if (poradieaut.sort() === spravneporadie) {
-        console.log("sikokot");
-    } else {
-        console.log(poradieaut.sort())
-    }
+
+
+
+    // const spravneporadie = [1, 2, 3];
+    // poradieaut.push(1);
+    // poradieaut.push(2);
+    // poradieaut.push(3);
+    // if (poradieaut.sort() === spravneporadie) {
+    //     console.log("sikokot");
+    // } else {
+    //     console.log(poradieaut.sort())
+    // }
 }
 
 
@@ -106,7 +119,6 @@ function holdOn(milisekundy) {
 }
 
 function spustiDemo() {
-
   motionPath1();
   setTimeout(motionPath2, 2000);
   setTimeout(motionPath3, 4000);
