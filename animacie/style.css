@@ -21,8 +21,17 @@ body{
 
 }
 
+/*.testsprite{*/
+/*    position: absolute;*/
+/*    width: 370px;*/
+/*    height: 652px;*/
+/*    background: url("modreautoSL.png") left center;*/
+/*    animation: play .8s steps(2) infinite;*/
+/*}*/
 
-
+/*@keyframes play {*/
+/*    100% {background-position: -740px}*/
+/*}*/
 
 
 
