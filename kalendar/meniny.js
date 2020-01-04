@@ -21,3 +21,29 @@ function myFunction(xml) {
     }
     document.getElementById("demo").innerHTML = table;
 }
+
+// function myFunction(xml) {
+//     var day, month, year,datum;
+//     $('#id').on('click', function() {
+//         var date = $('#date1').val().split("-");
+//         day = date[2];
+//         month = date[1];
+//         year = date[0];
+//         datum=month+day;
+//         alert(datum);
+//     });
+//
+//     var x, i, xmlDoc, txt;
+//     xmlDoc = xml.responseXML;
+//     txt = "";
+//     alert("poadsas");
+//     x = xmlDoc.getElementsByTagName("den");
+//     for (i = 0; i< x.length; i++) {
+//         alert("qqqqqq");
+//
+//         if(indexOf(datum)){ /*porovnanie datumu a den, nefunguje*/
+//             var pom = xmlDoc.getElementsByTagName("SK");
+//             txt += pom[i].childNodes[0].nodeValue + "<br>";
+//         }
+//         document.getElementById("demo").innerHTML = txt;
+//     }}
