@@ -106,11 +106,9 @@ function holdOn(milisekundy) {
 }
 
 function spustiDemo() {
-    motionPath1();
-    holdOn(20000);
-    motionPath2();
-    delay(2000);
-    motionPath3();
+  motionPath1();
+  setTimeout(motionPath2, 2000);
+  setTimeout(motionPath3, 4000);
 }
 
 
