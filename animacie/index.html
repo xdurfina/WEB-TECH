@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Jaroslav Ďurfina</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-<!--    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>-->
+
 
 
 </head>
@@ -17,13 +17,13 @@
 
 <div id="anime-demo">
 
-<div class="box blue" id="modreauto">
-    <img src="modreautoP.png"  style="transform: rotate(90deg)" height="161" width="84" >
+<div class="auto modre" id="modreauto">
+    <img src="modreauto.png"  style="transform: rotate(90deg)" height="161" width="84" >
 </div>
-<div class="box red" id="cerveneauto">
+<div class="auto cervene" id="cerveneauto">
     <img src="cerveneauto.png" style="transform: rotate(90deg); margin-top: -80px" height="161" width="84" >
 </div>
-<div class="box yellow" id="zlteauto">
+<div class="auto zlte" id="zlteauto">
     <img src="zlteauto.png" style="transform: rotate(90deg); margin-top: -80px" height="161" width="84">
 </div>
 
@@ -38,7 +38,21 @@
 
 </div>
 <h1>Krizovatka 1</h1>
-<button id="demo" onclick="spustiDemo()">DEMO</button>
+
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+
+<div class="dalsiaK">
+<button id="dalsiakrizovatka" onclick="window.location.href='./index2.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+</div>
+
+<p id="dovodtest">Keďže na križovatke nie sú žiadné dopravné značky, platí pravidlo pravej ruky.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+
+
 </body>
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>

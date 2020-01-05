@@ -1,42 +1,24 @@
-/*.box{*/
-/*    position: relative;*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    margin: 4px;*/
-/*    display:inline-block;*/
-/*}*/
 
 body{
-    background: url("kriz1opt.svg");
+    background: url("krizovatka1.svg");
     background-repeat: no-repeat;
-
 }
 
 #anime-demo{
     position: relative;
 }
 
-.box {
+.auto {
     position: absolute;
-
 }
 
-/*.testsprite{*/
-/*    position: absolute;*/
-/*    width: 370px;*/
-/*    height: 652px;*/
-/*    background: url("modreautoSL.png") left center;*/
-/*    animation: play .8s steps(2) infinite;*/
-/*}*/
+#dovodtest{
+    visibility: hidden;
+}
 
-/*@keyframes play {*/
-/*    100% {background-position: -740px}*/
-/*}*/
+#dalsiakrizovatka{
+    visibility: hidden;
+}
 
 
 
-
-/*.red{background-color: red}*/
-/*.blue{background-color: blue}*/
-/*.green{background-color: green}*/
-/*.yellow{background-color: yellow}*/

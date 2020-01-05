@@ -1,31 +1,11 @@
-// const animate = () => {
-//     console.log('animujem!');
-//     anime({
-//         targets: '.yellow',
-//         translateX: 250,
-//         rotate: '1turn',
-//         // backgroundColor: '#FFF',
-//         duration: 1000
-//     });
-// };
 
 const path = anime.path("#cesta1");
 const path2 = anime.path("#cesta2");
 const path3 = anime.path("#cesta3");
 
-// const  poradieAut = [1,2,3];
-// const spravnePoradieAut = [1,2,3];
-//
-// function kontrolaspravnosti(){
-//     if (spravnePoradieAut == poradieAut){
-//         alert("PRAVDA")}
-//         else {alert("NEPRAVDA")}
-// }
-//
-// for (i = 0; i<(spravnePoradieAut.length)
+var aktualneAuta = [];
+var spravneAuta = [1,2,3];
 
-
-// const easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
 
 
 window.onload = function nastavAutaNaPozicie() {
@@ -52,26 +32,16 @@ function motionPath1() {
     modreauto.style.marginLeft = "-40px";
 
     anime({
-        targets: '.box.blue',
+        targets: '.auto.modre',
         translateX: path('x'),
         translateY: path('y'),
         rotate: path('angle'),
         easing: 'easeInOutCubic',
         duration: 5000,
         loop: false
-    });
-
-
-
-    // const spravneporadie = [1, 2, 3];
-    // poradieaut.push(1);
-    // poradieaut.push(2);
-    // poradieaut.push(3);
-    // if (poradieaut.sort() === spravneporadie) {
-    //     console.log("sikokot");
-    // } else {
-    //     console.log(poradieaut.sort())
-    // }
+    })
+    aktualneAuta.push(1);
+    vyhodnotAuta();
 }
 
 
@@ -83,14 +53,16 @@ function motionPath2() {
     cerveneauto.style.marginTop = "0px";
     cerveneauto.style.marginLeft = "-40px";
     anime({
-        targets: '.box.red',
+        targets: '.auto.cervene',
         translateX: path2('x'),
         translateY: path2('y'),
         rotate: path2('angle'),
         easing: 'easeInOutCubic',
         duration: 5000,
         loop: false
-    });
+    })
+    aktualneAuta.push(3);
+    vyhodnotAuta();
 }
 
 const cerveneauto = document.getElementById("cerveneauto");
@@ -101,28 +73,58 @@ function motionPath3() {
     zlteauto.style.marginTop = "-40px";
     zlteauto.style.marginLeft = "0px";
     anime({
-        targets: '.box.yellow',
+        targets: '.auto.zlte',
         translateX: path3('x'),
         translateY: path3('y'),
         rotate: path3('angle'),
         easing: 'easeInOutCubic',
         duration: 5000,
         loop: false
-    });
+    })
+    aktualneAuta.push(2);
+    vyhodnotAuta();
 }
 const zlteauto = document.getElementById("zlteauto");
 zlteauto.addEventListener("click",motionPath3);
 
-function holdOn(milisekundy) {
-    setTimeout( function() {
-        }, milisekundy );
+
+
+function vyhodnotAuta() {
+    if (aktualneAuta.length == 3){
+        if (aktualneAuta[0] == spravneAuta[0] && aktualneAuta[1] == spravneAuta[1] && aktualneAuta[2] == spravneAuta[2]){
+            document.getElementById("vypis1").innerHTML = "Gratulujeme, zadal si spravne poradie aut. <br> Klikni na button pre pokracovanie na dalsiu krizovatku";
+            aktualneAuta = [];
+            document.getElementById("dalsiakrizovatka").style.visibility = "visible";
+
+        }
+        else {
+            document.getElementById("vypis1").innerHTML = "Nesprávne si vyriešil križovatku. <br> Skús ešte raz, pre pokračovanie klikni myšou";
+            aktualneAuta = [];
+            document.onmousedown=function (e) {
+                window.location.reload();}
+        }
+    }
 }
 
-function spustiDemo() {
-  motionPath1();
-  setTimeout(motionPath2, 2000);
-  setTimeout(motionPath3, 4000);
+function zobrazDovod() {
+    document.getElementById("dovodtest").style.visibility = "visible";
 }
+
+
+function spustiDemo() {
+  document.getElementById("demo").innerHTML = "DEMO🟢";
+  setTimeout(motionPath1(),0);
+  setTimeout(motionPath3, 2000);
+  setTimeout(motionPath2, 4000);
+  document.getElementById("vypis1").style.visibility = "hidden";
+  document.onmousedown=function (e) {
+      window.location.reload();}
+  document.getElementById("dalsiakrizovatka").style.opacity = "0";
+
+
+}
+
+
 
 
 
