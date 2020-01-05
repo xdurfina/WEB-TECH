@@ -4,6 +4,12 @@
     <link rel="stylesheet" type="text/css" href="style_kalendar.css">
     <meta charset="UTF-8">
     <title>Kalendár</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="meniny.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
 </head>
 <body>
 <ul class="ul_menu">
@@ -12,16 +18,16 @@
     <li class="li_menu"><a href="../autori/autori.html" title="Autori">Autori</a></li>
 </ul>
 
-<!--<input type="date" id="date1"/>-->
-<!--<button type="button" id="id" onclick="loadXMLDoc()">Zobraz mena</button>-->
-<!--<br><br>-->
-<!--<p id="demo"></p>-->
+<input type="date" id="date1">
+<button type="button" id="id_date" onclick="loadXMLDoc1()">Zobraziť meniny v daný deň</button>
+<p id="demo1"></p>
 
-<button type="button" onclick="loadXMLDoc()">Zobraz dni</button>
 <br><br>
-<table id="demo"></table>
-<script src="meniny.js"></script>
+<input type="text" id="name1">
+<button type="button" id="id_name" onclick="loadXMLDoc2()">Zobraziť dátum</button>
+<p id="demo2"></p>
 
-
+<button type="button" id="id_date_act" onclick="loadXMLDoc3()">Zobraziť dnešné meniny</button>
+<p id="demo3"></p>
 </body>
 </html>
