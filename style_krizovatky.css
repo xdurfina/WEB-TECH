@@ -1,14 +1,14 @@
 .leftbar {
     float: left;
     width: 50%;
-    height: 1080px;
-    background-color: #97caef;
+    height: 100%;
+    background-color: grey;
 }
 .rightbar {
     float: right;
     width: 50%;
     height: 100%;
-    background-color: green;
+    background-color: grey;
 }
 
 ul.ul_menu {
@@ -29,7 +29,7 @@ li.li_menu a{
     text-decoration: none;
     font-size: 30px;
 }
-li a:hover {
+li.li_menu a:hover {
     background-color: #111;
 }
 
@@ -61,4 +61,43 @@ li.li_krizovatky a {
     text-decoration: none;
     font-size: 30px;
     width: 200px;
+}
+li.li_krizovatky a:hover {
+    color:black;
+}
+
+@media print{
+    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+        display: block;
+    }
+    .rightbar{
+        background-color: white;
+    }
+    ul.ul_menu {
+        background-color: white;
+    }
+    li.li_menu a {
+
+        color:black;
+        border: 2px solid;
+    }
+    li a:hover {
+        background-color: white;
+        border:none;
+    }
+    li.li_menu a:hover {
+        background-color: white;
+    }
+    ul.ul_krizovatky {
+        background-color: white;
+    }
+    li.li_krizovatky {
+        color:black;
+    }
+    li.li_krizovatky a{
+        color:black;
+    }
+    li.li_krizovatky a:hover {
+        border:2px solid;
+    }
 }

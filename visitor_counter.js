@@ -9,3 +9,5 @@ document.getElementById('CounterVisitor').innerHTML = '';
 for (var i of nums) {
     document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
 }
+
+/*https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website*/

@@ -1,4 +1,3 @@
-/*Tomas*/
 h1{
     font-size: 30px;
     color: whitesmoke;
@@ -28,4 +27,23 @@ header{
     transition: filter 1s ease-in-out;
     filter: grayscale(0);
 }
-/*Tomas*/
+@media print{
+    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+        display: block;
+    }
+    body{
+        background-color: white;
+        width: 100%;
+    }
+    h1{
+        background-color: white;
+        font-size: 15pt;
+        color: black;
+    }
+    header{
+        background-color: white;
+    }
+    .counter{
+        margin-left: 40%;
+    }
+}

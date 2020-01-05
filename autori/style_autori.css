@@ -87,3 +87,46 @@ th{
     background-color: #333;
     color: white;
 }
+
+@media print{
+    header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+        display: block;
+    }
+    ul.ul_menu {
+        background-color: white;
+    }
+    li.li_menu a {
+       color:black;
+        border: 2px solid;
+    }
+    li a:hover {
+        background-color: white;
+        border:none;
+    }
+    .leftbar{
+        margin-left: 1%;
+       background-color: white;
+        border: 2px solid;
+        width: 32%;
+    }
+    .centerbar{
+       background-color: white;
+        border: 2px solid;
+        width: 32%;
+    }
+    .rightbar{
+        background-color: white;
+        border: 2px solid;
+        width: 32%;
+    }
+    #uloha{
+        background-color: white;
+        color: black;
+    }
+    #riadok1{
+        background-color: white;
+    }
+    table.tabulka{
+        background-color: white;
+    }
+}
