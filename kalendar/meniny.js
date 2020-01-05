@@ -65,6 +65,17 @@ function loadXMLDoc2() {
     xmlhttp.open("GET", "meniny.json", true);
     xmlhttp.send();
 }
+function loadXMLDoc3() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            myFunctionMeninyAktualnyDen(myObj);
+        }
+    };
+    xmlhttp.open("GET", "meniny.json", true);
+    xmlhttp.send();
+}
 
 function myFunctionDatumNaMeno(json) {
     var txt,day, month, year,datum;
@@ -91,6 +102,31 @@ function myFunctionDatumNaMeno(json) {
     }
     document.getElementById("demo1").innerHTML = txt;
 }
+function myFunctionMeninyAktualnyDen(json) {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0');
+    var year = today.getFullYear();
+    var txt,datum;
+    datum=month+day;
+    txt="";
+    for (var key in json) {
+        if (json.hasOwnProperty(key)) {
+            if(json[key].den===datum){
+                if(json[key].SK){
+                    txt+=json[key].SK;
+                }
+                else{
+                    if(json[key].SKsviatky){
+                        txt+=json[key].SKsviatky;
+                    }
+                }
+            }
+        }
+    }
+    document.getElementById("demo3").innerHTML = txt;
+}
+
 
 function myFunctionMenoNaDatum(json) {
     var txt,day, month, year,datum;
@@ -103,13 +139,22 @@ function myFunctionMenoNaDatum(json) {
         if (json.hasOwnProperty(key)){
             if(json[key].SK){
                 var pom;
+                // var pomocne="Tomas";
+                // var kokot=pomocne.split(',')
+                //     alert(kokot[0]);
+                //     alert(kokot[1]);
+                //     alert(kokot.length);
+                // var meniny=pomocne.split(', ');
                 pom=json[key].SK;
-                if((pom.split(', '))==1){
+                var mena=pom.split(', ');
+                if(mena[1]!==undefined){
+                    alert("asdasdasa");
                     var data_array = pom.split(', ');
+                    console.log(data_array);
                     for(var toto in data_array){
                         toto=toto.toLocaleLowerCase();
                         toto=toto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                        alert(toto);
+                        // alert(toto);
                         if(toto===res){
                             txt+=json[key].den;
                             break;
@@ -117,7 +162,7 @@ function myFunctionMenoNaDatum(json) {
                     }
                 }
                 else
-                {
+                {   pom=mena[0];
                     pom = pom.toLocaleLowerCase();
                     pom = pom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                     if (pom === res) {
@@ -132,4 +177,3 @@ function myFunctionMenoNaDatum(json) {
 
     document.getElementById("demo2").innerHTML = txt;
 }
-
