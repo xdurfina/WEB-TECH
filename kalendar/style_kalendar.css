@@ -19,6 +19,18 @@ li.li_menu a{
 li a:hover {
     background-color: #111;
 }
+li.li_menu2 {
+    float: left;
+}
+li.li_menu2 a{
+    background-color: #111;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
 table,th,td {
     border : 1px solid black;
     border-collapse: collapse;
@@ -99,7 +111,16 @@ th,td {
     li.li_menu a:hover {
         background-color: white;
     }
-
+    li.li_menu2 a:hover {
+        background-color: white;
+        border:none;
+    }
+    li.li_menu2 a{
+        background-color: white;
+        border:2px solid;
+        color:black;
+        text-decoration: underline;
+    }
     .aktualne_meniny{
         background-color: white;
     }
