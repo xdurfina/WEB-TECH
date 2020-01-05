@@ -78,11 +78,10 @@ function loadXMLDoc3() {
 }
 
 function myFunctionDatumNaMeno(json) {
-    var txt,day, month, year,datum;
+    var txt,day, month,datum;
     var date = $('#date1').val().split("-");
     day = date[2];
     month = date[1];
-    // year = date[0];
     datum=month+day;
     txt="";
     for (var key in json) {
@@ -106,7 +105,6 @@ function myFunctionMeninyAktualnyDen(json) {
     var today = new Date();
     var day = String(today.getDate()).padStart(2, '0');
     var month = String(today.getMonth() + 1).padStart(2, '0');
-    var year = today.getFullYear();
     var txt,datum;
     datum=month+day;
     txt="";
@@ -114,8 +112,7 @@ function myFunctionMeninyAktualnyDen(json) {
         if (json.hasOwnProperty(key)) {
             if(json[key].den===datum){
                 if(json[key].SK){
-                    txt+=json[key].SK;
-                }
+                    txt+="Dnes je "+day+"."+month+"."+" a meniny má "+json[key].SK+".";                }
                 else{
                     if(json[key].SKsviatky){
                         txt+=json[key].SKsviatky;
@@ -129,7 +126,7 @@ function myFunctionMeninyAktualnyDen(json) {
 
 
 function myFunctionMenoNaDatum(json) {
-    var txt,day, month, year,datum;
+    var txt;
     txt="";
     var name = $('#name1').val();
     var res;
@@ -148,7 +145,10 @@ function myFunctionMenoNaDatum(json) {
                     temp_meno=mena[i].toLocaleLowerCase();
                     temp_meno=temp_meno.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                     if(temp_meno===res){
-                        txt+=json[key].den;
+                        var temp_date=json[key].den;
+                        var str1=temp_date.substr(0, 2);
+                        var str2=temp_date.substr(2,2);
+                        txt+=str2+"."+str1+".";
                         break;
                     }
                 }
