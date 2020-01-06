@@ -61,6 +61,13 @@ header{
     transition: filter 1s ease-in-out;
     filter: grayscale(0);
 }
+.counter{
+    font-size: 30px;
+    margin-left: 35%;
+}
+#CounterVisitor{
+    margin-left: 22%;
+}
 @media print{
     header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
         display: block;
