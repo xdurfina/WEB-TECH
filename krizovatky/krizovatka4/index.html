@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jaroslav Ďurfina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto modre" id="modreauto">
+        <img src="modreauto.png" height="84" width="161">
+    </div>
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161">
+    </div>
+    <div class="auto zlte" id="zlteauto">
+        <img src="zlteauto.png" height="84" width="161">
+    </div>
+    <div class="auto cierne" id="cierneauto">
+        <img src="cierneauto.png" height="84" width="161">
+    </div>
+
+    <svg width="960" height="540">
+
+        <path id="cesta3" d="m 619.07 194.61 l -27.065 -0.132 c -6.447 -0.083 -188.44 -21.168 -146.5 370.91"
+              stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta1" d="m 294.08 332.11 l 697.18 1.69 h -0.845" stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta2" d="M 546.761 439.437 L 548.451 -92.958" stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta4" d="m 418.31 103.099 c 0 0 -23.662 227.324 230.704 227.324 c 254.366 0 402.254 -0.845 402.254 -0.845" stroke="black" stroke-width="0px" fill="none"/>
+
+    </svg>
+
+
+</div>
+<h1>Krizovatka 4</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button>
+<br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button>
+<br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button>
+<br>
+<button id="dalsiakrizovatka" onclick="window.location.href='../krizovatka5/index.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">Ako prvé vojde do križovatky červené auto, keďže je na hlavnej ceste a modré vozidlo mu dáva prednosť (pravidlo pravej ruky)<br>
+Ako druhé vojde do križovatky modré vozidlo a za ním čierne vozidlo, keďže žlté vozidlo musí dať prednosť všetkým. Žlté vozidlo vstúpi do križovatky, ako posledné. </p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>

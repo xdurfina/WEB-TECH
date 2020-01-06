@@ -1,30 +1,28 @@
 
 const path = anime.path("#cesta1");
 const path2 = anime.path("#cesta2");
-const path3 = anime.path("#cesta3");
+
 
 var aktualneAuta = [];
-var spravneAuta = [1,2,3];
+var spravneAuta = [1,2];
 
 
 
 window.onload = function nastavAutaNaPozicie() {
     //Nastavi modre auto na poziciu
-    modreauto.style.marginTop = "277px";
-    modreauto.style.marginLeft = "205px";
+    modreauto.style.marginTop = "190px";
+    modreauto.style.marginLeft = "430px";
+    modreauto.style.transform = "rotate(175deg)";
 
 
 
     //Nastavi cervene auto na poziciu
-    cerveneauto.style.marginTop = "388px";
-    cerveneauto.style.marginLeft = "465px";
-    cerveneauto.style.transform = "rotate(-102deg)";
+    cerveneauto.style.marginTop = "80px";
+    cerveneauto.style.marginLeft = "420px";
+    cerveneauto.style.transform = "rotate(180deg)";
 
 
-    //Nastavi zlte auto na poziciu
-    zlteauto.style.marginTop = "155px";
-    zlteauto.style.marginLeft = "540px";
-    zlteauto.style.transform = "rotate(180deg)";
+
 
 
 }
@@ -44,7 +42,7 @@ function motionPath1() {
         duration: 5000,
         loop: false
     })
-    aktualneAuta.push(1);
+    aktualneAuta.push(2);
     vyhodnotAuta();
 }
 
@@ -55,7 +53,7 @@ modreauto.addEventListener('click', motionPath1);
 
 function motionPath2() {
 
-    cerveneauto.style.marginTop = "-40px";
+    cerveneauto.style.marginTop = "-50px";
     cerveneauto.style.marginLeft = "-95px";
     cerveneauto.style.transform = "rotate(90deg)";
 
@@ -69,7 +67,7 @@ function motionPath2() {
         duration: 5000,
         loop: false
     })
-    aktualneAuta.push(3);
+    aktualneAuta.push(1);
     vyhodnotAuta();
 }
 
@@ -77,30 +75,10 @@ const cerveneauto = document.getElementById("cerveneauto");
 cerveneauto.addEventListener("click", motionPath2);
 
 
-function motionPath3() {
-    zlteauto.style.marginTop = "-40px";
-    zlteauto.style.marginLeft = "-80px";
-
-    anime({
-        targets: '.auto.zlte',
-        translateX: path3('x'),
-        translateY: path3('y'),
-        rotate: path3('angle'),
-        easing: 'easeInOutCubic',
-        duration: 5000,
-        loop: false
-    })
-    aktualneAuta.push(2);
-    vyhodnotAuta();
-}
-const zlteauto = document.getElementById("zlteauto");
-zlteauto.addEventListener("click",motionPath3);
-
-
 
 function vyhodnotAuta() {
-    if (aktualneAuta.length == 3){
-        if (aktualneAuta[0] == spravneAuta[0] && aktualneAuta[1] == spravneAuta[1] && aktualneAuta[2] == spravneAuta[2]){
+    if (aktualneAuta.length == 2){
+        if (aktualneAuta[0] == spravneAuta[0] && aktualneAuta[1] == spravneAuta[1]){
             document.getElementById("vypis1").innerHTML = "Gratulujeme, zadal si spravne poradie aut. <br> Klikni na button pre pokracovanie na dalsiu krizovatku";
             aktualneAuta = [];
             document.getElementById("dalsiakrizovatka").style.visibility = "visible";
@@ -122,9 +100,8 @@ function zobrazDovod() {
 
 function spustiDemo() {
   document.getElementById("demo").innerHTML = "DEMO🟢";
-  setTimeout(motionPath1(),0);
-  setTimeout(motionPath3, 2000);
-  setTimeout(motionPath2, 4000);
+  setTimeout(motionPath2(),0);
+  setTimeout(motionPath1, 2000);
   document.getElementById("vypis1").style.visibility = "hidden";
   document.onmousedown=function (e) {
       window.location.reload();}

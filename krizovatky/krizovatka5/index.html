@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jaroslav Ďurfina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto modre" id="modreauto">
+        <img src="modreauto.png" height="84" width="161">
+    </div>
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161">
+    </div>
+    <div class="auto zlte" id="zlteauto">
+        <img src="zlteauto.png" height="84" width="161">
+    </div>
+    <div class="auto cierne" id="cierneauto">
+        <img src="cierneauto.png" height="84" width="161">
+    </div>
+
+    <svg width="960" height="540">
+
+        <path id="cesta3" d="m 125.92 415.77 l 355.77 -0.845 s 55.775 -15.211 81.127 -72.676 s 495.21 -23.662 495.21 -23.662"
+              stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta4" d="m 338.03 416.62 l 136.06 -1.69 s 51.342 -0.228 87.042 -70.141 c 20.282 -39.718 490.14 -21.127 490.14 -21.127" stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta2" d="m 155.49 319.44 l 902.54 -0.845" stroke="black" stroke-width="0px" fill="none"/>
+        <path id="cesta1" d="m 375.21 319.44 l 682.82 -0.845" stroke="black" stroke-width="0px" fill="none"/>
+
+    </svg>
+
+
+</div>
+<h1>Krizovatka 5</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button>
+<br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button>
+<br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button>
+<br>
+<button id="dalsiakrizovatka" onclick="window.location.href='./index2.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest"> Striedavé radenie. Predpokladáme, že vodiči budú slušní a budú ho dodržovať. :) </p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>
