@@ -1,0 +1,30 @@
+
+body{
+    background: url("krizovatka8.svg");
+    background-repeat: no-repeat;
+}
+
+#anime-demo{
+    position: relative;
+}
+
+.auto {
+    position: absolute;
+
+}
+.cyklista{
+    position: absolute;
+}
+#dovodtest{
+    visibility: hidden;
+    background-color: white;
+
+}
+
+#dalsiakrizovatka{
+    visibility: hidden;
+}
+
+
+
+

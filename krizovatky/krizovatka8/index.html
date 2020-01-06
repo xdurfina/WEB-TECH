@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>K8 Šimon Zaujec</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+<div id="anime-demo">
+
+<div class="cyklista jeden" id="cyklista">
+    <img src="cyklista.png" height="25" width="40" >
+</div>
+<div class="auto cervene" id="cerveneauto">
+    <img src="cerveneauto.png" height="84" width="161" >
+</div>
+<div class="auto modre" id="modreauto">
+    <img src="modreauto.png" height="84" width="161">
+</div>
+
+<svg width="960" height="540" >
+    <path id="cesta1" d="m 293.26 238.02 c 265.71 102.86 467.99 -19.605 656.82 -189.81" stroke="black" stroke-width= "0px" fill="none"/>
+    <path id="cesta2" d="m 536.3 527.26 l -1.082 -180.24 c 0.282 -70.923 184.65 -125.44 278.27 -188.34" stroke="black" stroke-width= "0px" fill="none"/>
+    <path id="cesta3" d="m 346.49 405.74 l 339.46 -1.004" stroke="black" stroke-width= "0px" fill="none"/>
+
+</svg>
+
+
+
+</div>
+<h1>Križovatka 8</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+<button id="dalsiakrizovatka" onclick="window.location.href='../krizovatka9/index.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">Cyklista ide po cykloprechode ako prvý, zároveň s ním ide aj modré auto ktoré nemusí dávať prednosť červenému, pretože to dáva prednosť cyklistovi.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>

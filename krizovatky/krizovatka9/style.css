@@ -1,0 +1,33 @@
+
+body{
+    background: url("krizovatka9.svg");
+    background-repeat: no-repeat;
+}
+
+#anime-demo{
+    position: relative;
+}
+
+.auto {
+    position: absolute;
+
+}
+.chodec_jeden{
+    position: absolute;
+}
+.chodec_dva{
+    position: absolute;
+}
+#dovodtest{
+    visibility: hidden;
+    background-color: white;
+
+}
+
+#dalsiakrizovatka{
+    visibility: hidden;
+}
+
+
+
+
