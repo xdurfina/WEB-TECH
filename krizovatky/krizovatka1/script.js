@@ -10,17 +10,19 @@ var spravneAuta = [1,2,3];
 
 window.onload = function nastavAutaNaPozicie() {
     //Nastavi modre auto na poziciu
-    modreauto.style.marginTop = "125px";
-    modreauto.style.marginLeft = "620px";
+    modreauto.style.marginTop = "155px";
+    modreauto.style.marginLeft = "565px";
     modreauto.style.transform = "rotate(180deg)";
 
+
     //Nastavi cervene auto na poziciu
-    cerveneauto.style.marginTop = "325px";
-    cerveneauto.style.marginLeft = "280px";
+    cerveneauto.style.marginTop = "285px";
+    cerveneauto.style.marginLeft = "225px";
+
 
     //Nastavi zlte auto na poziciu
-    zlteauto.style.marginTop = "405px";
-    zlteauto.style.marginLeft = "530px";
+    zlteauto.style.marginTop = "390px";
+    zlteauto.style.marginLeft = "460px";
     zlteauto.style.transform = "rotate(-90deg)";
 
 
@@ -28,8 +30,8 @@ window.onload = function nastavAutaNaPozicie() {
 
 
 function motionPath1() {
-    modreauto.style.marginTop = "-85px";
-    modreauto.style.marginLeft = "-40px";
+    modreauto.style.marginTop = "-55px";
+    modreauto.style.marginLeft = "-90px";
 
     anime({
         targets: '.auto.modre',
@@ -50,8 +52,12 @@ modreauto.addEventListener('click', motionPath1);
 
 
 function motionPath2() {
-    cerveneauto.style.marginTop = "0px";
-    cerveneauto.style.marginLeft = "-40px";
+
+    cerveneauto.style.marginTop = "-40px";
+    cerveneauto.style.marginLeft = "-90px";
+    cerveneauto.style.transform = "rotate(90deg)";
+
+
     anime({
         targets: '.auto.cervene',
         translateX: path2('x'),
@@ -70,8 +76,9 @@ cerveneauto.addEventListener("click", motionPath2);
 
 
 function motionPath3() {
-    zlteauto.style.marginTop = "-40px";
-    zlteauto.style.marginLeft = "0px";
+    zlteauto.style.marginTop = "-50px";
+    zlteauto.style.marginLeft = "-80px";
+
     anime({
         targets: '.auto.zlte',
         translateX: path3('x'),

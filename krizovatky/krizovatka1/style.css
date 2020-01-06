@@ -1,6 +1,6 @@
 
 body{
-    background: url("krizovatka1.svg");
+    background: url("krizovatka1/krizovatka1.svg");
     background-repeat: no-repeat;
 }
 
@@ -10,15 +10,19 @@ body{
 
 .auto {
     position: absolute;
+
 }
 
 #dovodtest{
     visibility: hidden;
+    background-color: white;
+
 }
 
 #dalsiakrizovatka{
     visibility: hidden;
 }
+
 
 
 
