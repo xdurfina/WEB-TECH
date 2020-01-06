@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Križovatka 13</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto modre" id="modreauto">
+        <img src="cierneauto.png" height="84" width="161" >
+    </div>
+
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161" >
+    </div>
+
+    <div class="elektricka lava" id="elektrickalava">
+        <img src="elektricka.png" height="64" width="300">
+    </div>
+
+    <div class="elektricka prava" id="elektrickaprava">
+        <img src="elektricka.png" height="64" width="300">
+    </div>
+
+    <svg width="960" height="540" >
+        <path id="cesta1" d="m 582.77 501.24 l -0.334 -59.146 s 5.681 -343.18 -686.7 -329.81" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta2" d="m 248.36 412.18 c 67.145 0 93.032 -23.46 116.49 29.123 c 23.46 52.584 18.606 52.584 19.415 114.87 c 0.809 62.291 0.809 148.85 0.809 148.85" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta3" d="m 172.96 317.89 l 1109.1 1.418" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta4" d="m 811.88 223.85 l -1242.4 -1.89" stroke="black" stroke-width= "0px" fill="none"/>
+    </svg>
+
+</div>
+<h1>Krizovatka 13</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+<button id="dalsiakrizovatka" onclick="window.location.href='http://147.175.121.202/~xplastiak/konecnaverzia/krizovatky/krizovatka14/index.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">Čierne a červené auto prejdú naraz po hlavnej ceste, električka z vedľajšej ulice dáva prednosť autám a prechádza súčasne s druhou električkou.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>

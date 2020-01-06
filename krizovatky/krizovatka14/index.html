@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Križovatka 14</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto zlte" id="zlteauto">
+        <img src="zlteauto.png" height="84" width="161" >
+    </div>
+
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto cierne" id="cierneauto">
+        <img src="cierneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto modre" id="modreauto">
+        <img src="modreauto.png" height="84" width="161" >
+    </div>
+
+    <div class="elektricka hore" id="elektrickahorna">
+        <img src="elektricka.png" height="64" width="300">
+    </div>
+
+    <div class="elektricka dolna" id="elektrickadolna">
+        <img src="elektricka.png" height="64" width="300">
+    </div>
+
+    <svg width="960" height="540" >
+        <path id="cesta1" d="m 319.46 93.893 l 3.781 633.25" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta2" d="m 237.23 95.783 l -0.945 54.818 s 6.616 52.928 -51.983 52.928 s -369.56 0.986 -369.56 0.986" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta3" d="m 737.21 456.83 l -1.89 -614.34" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta4" d="m 670 455 v -39 s 20.101 -207.901 -853.26 -192.481" stroke="black" stroke-width= "0px" fill="none"/>
+    </svg>
+
+</div>
+<h1>Krizovatka 14</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+<button id="dalsiakrizovatka" onclick="window.location.href='http://147.175.121.202/~xplastiak/konecnaverzia/krizovatky/krizovatka15/index.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">V protiľahlom rohu križovatky svieti „signál na opustenie križovatky“, preto má žlté vozidlo prednosť pred červeným  a modrým autom a môže prejsť súčasne s čiernym.<br> Po nich prejdú červené a modré.  Električky majú na svojom signalizačnom zariadení „červenú“.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>

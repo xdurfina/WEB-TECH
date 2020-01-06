@@ -1,0 +1,31 @@
+
+body{
+    background: url("krizovatka14.svg");
+    background-repeat: no-repeat;
+}
+
+#anime-demo{
+    position: relative;
+}
+
+.auto {
+    position: absolute;
+
+}
+.elektricka {
+    position: absolute;
+}
+
+#dovodtest{
+    visibility: hidden;
+    background-color: white;
+
+}
+
+#dalsiakrizovatka{
+    visibility: hidden;
+}
+
+
+
+
