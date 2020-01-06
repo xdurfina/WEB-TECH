@@ -10,9 +10,9 @@ var spravneAuta = [1,2,3];
 
 window.onload = function nastavAutaNaPozicie() {
     //Nastavi modre auto na poziciu
-    modreauto.style.marginTop = "155px";
-    modreauto.style.marginLeft = "565px";
-    modreauto.style.transform = "rotate(180deg)";
+    modreauto.style.marginTop = "240px";
+    modreauto.style.marginLeft = "200px";
+    modreauto.style.transform = "rotate(90deg)";
 
 
     //Nastavi cervene auto na poziciu
@@ -32,6 +32,7 @@ window.onload = function nastavAutaNaPozicie() {
 function motionPath1() {
     modreauto.style.marginTop = "-55px";
     modreauto.style.marginLeft = "-90px";
+
 
     anime({
         targets: '.auto.modre',
