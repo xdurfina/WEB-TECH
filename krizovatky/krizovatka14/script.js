@@ -152,10 +152,10 @@ function zobrazDovod() {
 
 function spustiDemo() {
     document.getElementById("demo").innerHTML = "DEMO🟢";
-    setTimeout(motionPath1(),0);
-    setTimeout(motionPath2, 2000);
-    setTimeout(motionPath3, 4000);
-    setTimeout(motionPath4, 4000);
+    setTimeout(motionPath4(),0);
+    setTimeout(motionPath3, 0);
+    setTimeout(motionPath2, 2500);
+    setTimeout(motionPath1, 2500);
 
     document.getElementById("vypis1").style.visibility = "hidden";
     document.onmousedown=function (e) {

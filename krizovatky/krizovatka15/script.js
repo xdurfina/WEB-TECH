@@ -146,7 +146,7 @@ elektrickadolna.addEventListener('click', motionPath5);
 function vyhodnotAuta() {
     if (aktualneAuta.length == 5){
         if (aktualneAuta[0] == spravneAuta[0] && aktualneAuta[1] == spravneAuta[1] && aktualneAuta[2] == spravneAuta[2] && aktualneAuta[3] == spravneAuta[3] && aktualneAuta[4] == spravneAuta[4]){
-            document.getElementById("vypis1").innerHTML = "Gratulujeme, zadal si spravne poradie aut. <br> Klikni na button pre pokracovanie na dalsiu krizovatku";
+            document.getElementById("vypis1").innerHTML = "Gratulujeme, zadal si spravne poradie aut. ";
             aktualneAuta = [];
             document.getElementById("dalsiakrizovatka").style.visibility = "visible";
 
@@ -167,10 +167,11 @@ function zobrazDovod() {
 
 function spustiDemo() {
     document.getElementById("demo").innerHTML = "DEMO🟢";
-    setTimeout(motionPath1(),0);
-    setTimeout(motionPath2, 2000);
+    setTimeout(motionPath2(),0);
+    setTimeout(motionPath5, 0);
     setTimeout(motionPath3, 4000);
-    setTimeout(motionPath4, 4000);
+    setTimeout(motionPath4, 6000);
+    setTimeout(motionPath1, 8000);
 
     document.getElementById("vypis1").style.visibility = "hidden";
     document.onmousedown=function (e) {

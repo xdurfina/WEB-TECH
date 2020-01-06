@@ -5,7 +5,7 @@
       <paths name="webtechserver">
         <serverdata>
           <mappings>
-            <mapping deploy="/konecnaverzia" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/FINALNAVERZIA" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

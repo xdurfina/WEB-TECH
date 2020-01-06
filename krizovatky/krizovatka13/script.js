@@ -140,7 +140,7 @@ function zobrazDovod() {
 function spustiDemo() {
     document.getElementById("demo").innerHTML = "DEMO🟢";
     setTimeout(motionPath1(),0);
-    setTimeout(motionPath2, 2000);
+    setTimeout(motionPath2, 0);
     setTimeout(motionPath3, 4000);
     setTimeout(motionPath4, 4000);
 
