@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Križovatka 11</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto cierne" id="cierneauto">
+        <img src="cierneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto zlte" id="zlteauto">
+        <img src="zlteauto.png" height="84" width="161">
+    </div>
+
+    <svg width="960" height="540" >
+        <path id="cesta3" d="m 421.71 102.92 c 0.668 98.911 -4.678 120.3 37.426 176.44 c 42.104 56.139 195.82 58.144 195.82 58.144 l 549.36 -8.688" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta1" d="m 316.11 330.15 l 716.44 -1.337" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta2" d="m 533.985 452.45 c -1.337 -62.822 -3.342 -118.96 34.084 -135.668 c 37.426 -16.708 392.97 -10.025 392.97 -10.025 l 24.059 0.668 l 290.718 -5.347" stroke="black" stroke-width= "0px" fill="none"/>
+
+    </svg>
+
+</div>
+<h1>Krizovatka 11</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+<button id="dalsiakrizovatka" onclick="window.location.href='http://147.175.121.202/~xplastiak/konecnaverzia/krizovatky/krizovatka12/index.html'">KLIKNI SEM PRE DALSIU KRIZOVATKU!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">Čierne vozidlo na hlavnej ceste má prednosť, žlté vozidlo pri odbáčaní doľava dáva prednosť červenému vozidlu.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>

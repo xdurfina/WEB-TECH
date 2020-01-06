@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Križovatka 15</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div id="anime-demo">
+
+    <div class="auto zlte" id="zlteauto">
+        <img src="zlteauto.png" height="84" width="161" >
+    </div>
+
+    <div class="auto cervene" id="cerveneauto">
+        <img src="cerveneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto cierne" id="cierneauto">
+        <img src="cierneauto.png" height="84" width="161" >
+    </div>
+    <div class="auto modre" id="modreauto">
+        <img src="modreauto.png" height="84" width="161" >
+    </div>
+
+    <div class="elektricka dolna" id="elektrickadolna">
+        <img src="elektricka.png" height="64" width="300">
+    </div>
+
+    <svg width="960" height="540" >
+        <path id="cesta1" d="m 385.62 40.019 l -4.726 597.33" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta2" d="m 250.46 406.73 l 847.79 -4.726" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta3" d="m 711.69 138.31 c -89.789 -1.89 -135.16 -7.561 -188.08 26.464 s -122.87 63.325 -133.27 129.48 s -8.506 267.48 -9.451 352.54" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta4" d="m 179.58 326.4 l 976.33 -0.945" stroke="black" stroke-width= "0px" fill="none"/>
+        <path id="cesta5" d="m 572.76 533.38 v -86.953 s 1.89 -39.696 -21.738 -95.459 c -23.629 -55.763 -17.175 -99.594 -100.35 -147.8 s -64.887 -45.447 -189.41 -65.3 c -127.55 -20.334 -342.54 -15.8 -342.54 -15.8" stroke="black" stroke-width= "0px" fill="none"/>
+    </svg>
+
+</div>
+<h1>Krizovatka 15</h1>
+
+<!--BUTTONY-->
+<button id="demo" onclick="spustiDemo()">DEMO🔴</button><br>
+<button id="reset" onclick="window.location.reload()">RESETUJ AUTA</button><br>
+<button id="dovod" onclick="zobrazDovod()">ZOBRAZ ODOVODNENIE</button><br>
+<button id="dalsiakrizovatka" onclick="window.location.href='http://147.175.121.202/~xplastiak/konecnaverzia/index.html'">UKONČIŤ TEST!</button>
+
+
+<!--ODOVODNENIE KRIZOVATKY-->
+<p id="dovodtest">Červené auto a električka prejdú súčasne. Ďalej čierne auto, ktoré im dávalo prednosť kvôli odbáčaniu vľavo. Modré auto prejde ako posledné pretože dáva prednosť žltému autu.</p>
+<p id="vypis1"></p>
+<p id="vypisdemo"></p>
+
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>
