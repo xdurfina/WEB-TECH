@@ -63,10 +63,10 @@ header{
 }
 .counter{
     font-size: 30px;
-    margin-left: 35%;
+    text-align: center;
 }
 #CounterVisitor{
-    margin-left: 22%;
+    text-align: center;
 }
 @media print{
     header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
@@ -112,4 +112,15 @@ header{
     .counter{
         margin-left: 40%;
     }
+}
+
+#uvod{
+
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
 }
